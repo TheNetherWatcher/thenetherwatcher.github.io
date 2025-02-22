@@ -1,0 +1,30 @@
+{
+    "name": "Bharat Kaurav",
+    "short_name": "BK",
+    "icons": [
+      {
+        "src": "./additional_files/icon-255x256.png",
+        "sizes": "255x256",
+        "type": "image/png"
+      },
+      {
+        "src": "./additional_files/icon-255x256.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      },
+      {
+        "src": "./additional_files/icon-255x256.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+      {
+        "src": "./additional_files/icon-255x256.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/"
+  }
