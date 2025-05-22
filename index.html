@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bharat Kaurav</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar (Left, outside the box) -->
+    <aside class="sidebar compact-sidebar">
+        <div class="profile-container">
+          <img src="profile.jpg" alt="Your profile photo" class="profile-img">
+        </div>
+        <h1>Bharat Kaurav</h1>
+
+        <div class="resume-links">
+            <a href="ML_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-file-pdf"></i> ML Resume
+            </a>
+            <a href="Software_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-file-pdf"></i> Software Resume
+            </a>
+        </div>
+
+        <div class="social-links">
+          <a href="mailto:bharatkaurav2211@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/TheNetherWatcher" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/bharat-kaurav2024" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://instagram.com/bhrkrv2211" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/tnw_01" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://huggingface.co/TheNetherWatcher" target="_blank" title="Hugging Face">
+            <!-- Hugging Face SVG icon -->
+            <svg width="20" height="20" viewBox="0 0 40 40" style="vertical-align:middle;">
+              <circle cx="20" cy="20" r="20" fill="#FFD21F"/>
+              <ellipse cx="14" cy="19" rx="2" ry="3" fill="#000"/>
+              <ellipse cx="26" cy="19" rx="2" ry="3" fill="#000"/>
+              <path d="M14 27c2 2 10 2 12 0" stroke="#000" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </svg>
+          </a>                    
+        </div>
+      </aside>        
+
+    <!-- Main Content (Right, multiple cards/blocks) -->
+    <main class="main-content">
+      <nav>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#achievements">Achievements</a>
+      </nav>
+
+      <section id="experience" class="content-card">
+        <h2>Experience</h2>
+        <div class="exp-card">
+          <div class="exp-header">
+            <h3>Machine Learning Engineer <br>Unstudio.ai</h3>
+            <span class="exp-place">Nov 2024 – Apr 2025<br>Gurgaon, India (Remote)</span>
+          </div>
+          <ul>
+            <li>Engineered a product visualization pipeline using FLUX LoRA, benefiting 2000+ customers.</li>
+            <li>Designed distributed training setup with Redis, Pub-Sub, CI/CD workflows. </li>
+          </ul>
+        </div>
+        <div class="exp-card">
+          <div class="exp-header">
+            <h3>Research Intern <br>LIPG, IIT Indore</h3>
+            <span class="exp-place">Jul 2023 – Present<br>Indore, India</span>
+          </div>
+          <ul>
+            <li>Created a 5000+ image dataset using DINOv2 and SAM for segmentation mask generation.</li>
+            <li>Achieved 96% SOTA classification accuracy with hybrid CNN-Transformer architectures.</li>
+            <li>Research paper accepted.</li>
+          </ul>
+        </div>
+        <div class="exp-card">
+          <div class="exp-header">
+            <h3>Machine Learning Intern <br>Styldod Inc.</h3>
+            <span class="exp-place">Jun 2024 – Oct 2024<br>Bangalore, India (Remote)</span>
+          </div>
+          <ul>
+            <li>Enhanced inference speed of diffusion models by 50%, reducing GPU usage by 30%.</li>
+            <li>Built scalable image pipelines, tested with 300k+ images.</li>
+          </ul>
+        </div>
+      </section>      
+
+      <section id="projects" class="content-card">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>InterIIT13 Pathway</h3>
+            <span>Inter IIT Tech Meet 13.0</span>
+            <p class="project-desc">
+              <strong>What it does:</strong> Dynamic agentic Retrieval-Augmented Generation (RAG) platform with custom knowledge graphs and evaluation pipelines.<br>
+              <strong>What I did:</strong> Helped in setting up Docker-based deployment, created Streamlit demo UI, managed evaluation workflows and helped to remove the bugs and errors for every member of the team.
+            </p>
+            <div class="project-skills">
+              <strong>Skills/Tech Used:</strong> Python, RAG, Knowledge Graphs, NLP, Pathway, Docker, Streamlit, Machine Learning, Data Engineering
+            </div>
+          </div>
+        <div class="project-card">
+          <h3>Adobe Behaviour Simulation Challenge</h3>
+          <span>Inter IIT Tech Meet 12.0, Bronze Medal</span>
+          <p class="project-desc">
+            <strong>What it does:</strong> Simulates and predicts Twitter-like user behavior (likes, content generation) using machine learning.<br>
+            <strong>What I did:</strong> Developed ML models for behavior prediction and tweet content generation, handled data analysis and feature engineering, and contributed to the winning solution.
+          </p>
+          <div class="project-skills">
+            <strong>Skills/Tech Used:</strong> Python, Machine Learning, NLP, Scikit-learn, Pandas, Data Analysis, Simulation
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Mess Allocation & Hostel Management Website</h3>
+          <span>2024</span>
+          <p class="project-desc">
+            <strong>What it does:</strong> Web platform for mess meal allocation and rebate management for students and admins. Another web application for hostel room allocation, mess management, and student/staff record keeping.<br>
+            <strong>What I did:</strong> Built Django backend, implemented user authentication, designed admin dashboard, created a responsive front-end, built database schema, and integrated meal allocation algorithms.
+            For the hostel management system, I developed the backend, designed the database schema, implemented user roles, and built front-end interfaces for both admins and students.
+          </p>
+          <div class="project-skills">
+            <strong>Skills/Tech Used:</strong> Python, Django, HTML, CSS, JavaScript, Web Development, Database Design, User Authentication
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Face Recognition Attendance System</h3>
+          <span>2023</span>
+          <p class="project-desc">
+            <strong>What it does:</strong> Automates attendance using face recognition and deep learning.<br>
+            <strong>What I did:</strong> Developed face detection and recognition modules, integrated OpenCV pipeline, and handled attendance logging automation.
+          </p>
+          <div class="project-skills">
+            <strong>Skills/Tech Used:</strong> Python, OpenCV, Face Recognition, Deep Learning, Computer Vision, Automation
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="content-card">
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+          <li><strong>ML/DL:</strong> PyTorch, Transformers, Diffusers, BitsandBytes, PEFT, TRL, OpenCV, ComfyUI</li>
+          <li><strong>Cloud & MLOps:</strong> Docker, AWS, GitHub CI/CD</li>
+          <li><strong>Development:</strong> Python, C/C++, Django, FastAPI, React, Next.js</li>
+          <li><strong>Computer Vision & Generative AI:</strong> Diffusers, ComfyUI, ControlNet, PEFT, LoRA, OpenCV</li>
+        </ul>
+      </section>
+
+      <section id="education" class="content-card">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <strong>B.Tech. in Computer Science & Engineering</strong><br>
+            Indian Institute of Technology Indore<br>
+            CGPA: 8.36 (Current), 2022–Present
+          </li>
+        </ul>
+        <h3>Key Courses</h3>
+        <ul>
+          <li>Linear Algebra, ODE Analysis, Complex Analysis, Discrete Maths, Numerical Methods</li>
+          <li>Database Systems, Data Structures & Algorithms, Automata, Software Engineering, OS, Parallel Computing, System Architecture, Computer Networks, Compiler Design</li>
+        </ul>
+      </section>
+
+      <section id="achievements" class="content-card">
+        <h2>Achievements</h2>
+        <ul>
+          <li>Bronze Medal, 12th Inter IIT Tech Meet, Adobe's Behaviour Simulation Challenge, IIT Madras (2023)</li>
+          <li>Gold Medal, IITI Summer of Code, CyberSecurity (2023)</li>
+          <li>All India Rank 1083, JEE Advanced (2022)</li>
+          <li>All India Rank 5995, JEE Mains (2022)</li>
+          <li>Top 300 finalist, India's International Physics Olympiad (2022)</li>
+          <li>All India Rank 9, UCMAS Abacus Competition (2017)</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>&copy; 2025 Bharat Kaurav</p>
+      </footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
