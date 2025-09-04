@@ -1,185 +1,613 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bharat Kaurav</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Kaurav - Software Engineer & AI Researcher</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Meta Tags -->
+    <meta name="theme-color" content="#ff0a0a">
+    <meta name="description" content="Bharat Kaurav - Software Engineer at Metzev, AI Researcher, and Full Stack Developer. Published researcher in computer vision and sustainable cities.">
+    <meta name="keywords" content="Bharat Kaurav, Software Engineer, AI Researcher, Machine Learning, Computer Vision, Full Stack Developer, IIT Indore">
+    <meta name="author" content="Bharat Kaurav">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <!-- Sidebar (Left, outside the box) -->
-    <aside class="sidebar compact-sidebar">
-        <div class="profile-container">
-          <img src="profile.jpg" alt="Your profile photo" class="profile-img">
-        </div>
-        <h1>Bharat Kaurav</h1>
-
-        <div class="resume-links">
-            <a href="ML_Resume.pdf" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-file-pdf"></i> ML Resume
-            </a>
-            <a href="Software_Resume.pdf" target="_blank" rel="noopener noreferrer">
-              <i class="fas fa-file-pdf"></i> Software Resume
-            </a>
-        </div>
-
-        <div class="social-links">
-          <a href="mailto:bharatkaurav2211@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://github.com/TheNetherWatcher" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/bharat-kaurav2024" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://instagram.com/bhrkrv2211" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://twitter.com/tnw_01" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="https://huggingface.co/TheNetherWatcher" target="_blank" title="Hugging Face">
-            <!-- Hugging Face SVG icon -->
-            <svg width="20" height="20" viewBox="0 0 40 40" style="vertical-align:middle;">
-              <circle cx="20" cy="20" r="20" fill="#FFD21F"/>
-              <ellipse cx="14" cy="19" rx="2" ry="3" fill="#000"/>
-              <ellipse cx="26" cy="19" rx="2" ry="3" fill="#000"/>
-              <path d="M14 27c2 2 10 2 12 0" stroke="#000" stroke-width="2" fill="none" stroke-linecap="round"/>
-            </svg>
-          </a>                    
-        </div>
-      </aside>        
-
-    <!-- Main Content (Right, multiple cards/blocks) -->
-    <main class="main-content">
-      <nav>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#achievements">Achievements</a>
-      </nav>
-
-      <section id="experience" class="content-card">
-        <h2>Experience</h2>
-        <div class="exp-card">
-          <div class="exp-header">
-            <h3>Machine Learning Engineer <br>Unstudio.ai</h3>
-            <span class="exp-place">Nov 2024 – Apr 2025<br>Gurgaon, India (Remote)</span>
-          </div>
-          <ul>
-            <li>Engineered a product visualization pipeline using FLUX LoRA, benefiting 2000+ customers.</li>
-            <li>Designed distributed training setup with Redis, Pub-Sub, CI/CD workflows. </li>
-          </ul>
-        </div>
-        <div class="exp-card">
-          <div class="exp-header">
-            <h3>Research Intern <br>LIPG, IIT Indore</h3>
-            <span class="exp-place">Jul 2023 – Present<br>Indore, India</span>
-          </div>
-          <ul>
-            <li>Created a 5000+ image dataset using DINOv2 and SAM for segmentation mask generation.</li>
-            <li>Achieved 96% SOTA classification accuracy with hybrid CNN-Transformer architectures.</li>
-            <li>Research paper accepted.</li>
-          </ul>
-        </div>
-        <div class="exp-card">
-          <div class="exp-header">
-            <h3>Machine Learning Intern <br>Styldod Inc.</h3>
-            <span class="exp-place">Jun 2024 – Oct 2024<br>Bangalore, India (Remote)</span>
-          </div>
-          <ul>
-            <li>Enhanced inference speed of diffusion models by 50%, reducing GPU usage by 30%.</li>
-            <li>Built scalable image pipelines, tested with 300k+ images.</li>
-          </ul>
-        </div>
-      </section>      
-
-      <section id="projects" class="content-card">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>InterIIT13 Pathway</h3>
-            <span>Inter IIT Tech Meet 13.0</span>
-            <p class="project-desc">
-              <strong>What it does:</strong> Dynamic agentic Retrieval-Augmented Generation (RAG) platform with custom knowledge graphs and evaluation pipelines.<br>
-              <strong>What I did:</strong> Helped in setting up Docker-based deployment, created Streamlit demo UI, managed evaluation workflows and helped to remove the bugs and errors for every member of the team.
-            </p>
-            <div class="project-skills">
-              <strong>Skills/Tech Used:</strong> Python, RAG, Knowledge Graphs, NLP, Pathway, Docker, Streamlit, Machine Learning, Data Engineering
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-text">BK</div>
+                <div class="loading-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-          </div>
-        <div class="project-card">
-          <h3>Adobe Behaviour Simulation Challenge</h3>
-          <span>Inter IIT Tech Meet 12.0, Bronze Medal</span>
-          <p class="project-desc">
-            <strong>What it does:</strong> Simulates and predicts Twitter-like user behavior (likes, content generation) using machine learning.<br>
-            <strong>What I did:</strong> Developed ML models for behavior prediction and tweet content generation, handled data analysis and feature engineering, and contributed to the winning solution.
-          </p>
-          <div class="project-skills">
-            <strong>Skills/Tech Used:</strong> Python, Machine Learning, NLP, Scikit-learn, Pandas, Data Analysis, Simulation
-          </div>
+            <div class="loading-text">Loading Portfolio...</div>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
         </div>
-        <div class="project-card">
-          <h3>Mess Allocation & Hostel Management Website</h3>
-          <span>2024</span>
-          <p class="project-desc">
-            <strong>What it does:</strong> Web platform for mess meal allocation and rebate management for students and admins. Another web application for hostel room allocation, mess management, and student/staff record keeping.<br>
-            <strong>What I did:</strong> Built Django backend, implemented user authentication, designed admin dashboard, created a responsive front-end, built database schema, and integrated meal allocation algorithms.
-            For the hostel management system, I developed the backend, designed the database schema, implemented user roles, and built front-end interfaces for both admins and students.
-          </p>
-          <div class="project-skills">
-            <strong>Skills/Tech Used:</strong> Python, Django, HTML, CSS, JavaScript, Web Development, Database Design, User Authentication
-          </div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">BK</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div class="project-card">
-          <h3>Face Recognition Attendance System</h3>
-          <span>2023</span>
-          <p class="project-desc">
-            <strong>What it does:</strong> Automates attendance using face recognition and deep learning.<br>
-            <strong>What I did:</strong> Developed face detection and recognition modules, integrated OpenCV pipeline, and handled attendance logging automation.
-          </p>
-          <div class="project-skills">
-            <strong>Skills/Tech Used:</strong> Python, OpenCV, Face Recognition, Deep Learning, Computer Vision, Automation
-          </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-section glass-card">
+                    <div class="profile-image-container">
+                        <img src="profile.jpg" alt="Bharat Kaurav" class="profile-image">
+                        <div class="profile-glow"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="hero-name">Bharat Kaurav</h1>
+                        <div class="typing-container">
+                            <span id="typing-text" class="typing-text"></span>
+                            <span class="cursor">|</span>
+                        </div>
+                        <p class="hero-subtitle">
+                            Software Engineer at <span class="highlight">Metzev</span> • 
+                            Published AI Researcher • 
+                            Full Stack Developer
+                        </p>
+                    </div>
+                </div>
+
+                <div class="quick-stats glass-card">
+                    <div class="stat-item">
+                        <div class="stat-number">15K+</div>
+                        <div class="stat-label">Users Impacted</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Major Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Published Paper</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">8.44</div>
+                        <div class="stat-label">CGPA @ IIT</div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <div class="social-links glass-card">
+                        <a href="mailto:bharatkaurav2211@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/TheNetherWatcher" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bharat-kaurav2024" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/tnw_01" target="_blank" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <a href="Bharat_Kaurav_Resume.pdf" target="_blank" class="btn btn-primary glass-card">
+                            <i class="fas fa-file-pdf"></i>
+                            View Resume
+                        </a>
+                        <a href="#projects" class="btn btn-secondary glass-card">
+                            <i class="fas fa-rocket"></i>
+                            Explore Projects
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Overview -->
+            <div class="overview-section">
+                <div class="overview-card glass-card">
+                    <h2>Current Focus</h2>
+                    <div class="focus-items">
+                        <div class="focus-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h3>Software Engineering</h3>
+                                <p>Building scalable EV battery management systems at Metzev</p>
+                            </div>
+                        </div>
+                        <div class="focus-item">
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <h3>AI Research</h3>
+                                <p>Published research in computer vision and flood prediction</p>
+                            </div>
+                        </div>
+                        <div class="focus-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h3>Education</h3>
+                                <p>B.Tech CSE at IIT Indore (8.44 CGPA)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-highlights glass-card">
+                    <h2>Tech Stack Highlights</h2>
+                    <div class="tech-grid">
+                        <div class="tech-category">
+                            <h3>AI/ML</h3>
+                            <div class="tech-tags">
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">Transformers</span>
+                                <span class="tech-tag">Computer Vision</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h3>Full Stack</h3>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h3>Cloud & DevOps</h3>
+                            <div class="tech-tags">
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
 
-      <section id="skills" class="content-card">
-        <h2>Technical Skills</h2>
-        <ul class="skills-list">
-          <li><strong>ML/DL:</strong> PyTorch, Transformers, Diffusers, BitsandBytes, PEFT, TRL, OpenCV, ComfyUI</li>
-          <li><strong>Cloud & MLOps:</strong> Docker, AWS, GitHub CI/CD</li>
-          <li><strong>Development:</strong> Python, C/C++, Django, FastAPI, React, Next.js</li>
-          <li><strong>Computer Vision & Generative AI:</strong> Diffusers, ComfyUI, ControlNet, PEFT, LoRA, OpenCV</li>
-        </ul>
-      </section>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
 
-      <section id="education" class="content-card">
-        <h2>Education</h2>
-        <ul>
-          <li>
-            <strong>B.Tech. in Computer Science & Engineering</strong><br>
-            Indian Institute of Technology Indore<br>
-            CGPA: 8.36 (Current), 2022–Present
-          </li>
-        </ul>
-        <h3>Key Courses</h3>
-        <ul>
-          <li>Linear Algebra, ODE Analysis, Complex Analysis, Discrete Maths, Numerical Methods</li>
-          <li>Database Systems, Data Structures & Algorithms, Automata, Software Engineering, OS, Parallel Computing, System Architecture, Computer Networks, Compiler Design</li>
-        </ul>
-      </section>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="exp-header">
+                            <h3>Software Engineer</h3>
+                            <span class="company">Metzev</span>
+                            <span class="exp-period">May 2025 – Present</span>
+                            <span class="exp-location">Georgia, USA (Remote)</span>
+                        </div>
+                        <ul class="exp-achievements">
+                            <li>Developed a scalable EV battery management platform using Next.js and Supabase with real-time data handling</li>
+                            <li>Implemented performance optimizations including code splitting, lazy loading, and database indexing</li>
+                            <li>Scaled platform to <strong>15,000+ users</strong> across <strong>1,000+ stores</strong> in USA, securing 5 major clients</li>
+                            <li>Ensured platform reliability through performance-focused design and robust backend architecture</li>
+                        </ul>
+                    </div>
+                </div>
 
-      <section id="achievements" class="content-card">
-        <h2>Achievements</h2>
-        <ul>
-          <li>Bronze Medal, 12th Inter IIT Tech Meet, Adobe's Behaviour Simulation Challenge, IIT Madras (2023)</li>
-          <li>Gold Medal, IITI Summer of Code, CyberSecurity (2023)</li>
-          <li>All India Rank 1083, JEE Advanced (2022)</li>
-          <li>All India Rank 5995, JEE Mains (2022)</li>
-          <li>Top 300 finalist, India's International Physics Olympiad (2022)</li>
-          <li>All India Rank 9, UCMAS Abacus Competition (2017)</li>
-        </ul>
-      </section>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="exp-header">
+                            <h3>Machine Learning Engineer</h3>
+                            <span class="company">unstudio.ai</span>
+                            <span class="exp-period">Nov 2024 – Apr 2025</span>
+                            <span class="exp-location">Gurgaon, India (Remote)</span>
+                        </div>
+                        <ul class="exp-achievements">
+                            <li>Engineered a scalable, personalized product training and visualization pipeline for FLUX using LoRA fine-tuning</li>
+                            <li>Improved image quality and experience for <strong>2000+ users globally</strong></li>
+                            <li>Built distributed training system using Redis Pub/Sub with robust error handling and automated CI/CD via GitHub Actions</li>
+                        </ul>
+                    </div>
+                </div>
 
-      <footer>
-        <p>&copy; 2025 Bharat Kaurav</p>
-      </footer>
-    </main>
-  </div>
-  <script src="script.js"></script>
+                <div class="timeline-item glass-card">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="exp-header">
+                            <h3>Research Intern</h3>
+                            <span class="company">LIPG, IIT Indore</span>
+                            <span class="exp-period">Jul 2023 – Present</span>
+                            <span class="exp-location">Indore, India</span>
+                        </div>
+                        <ul class="exp-achievements">
+                            <li>Created a <strong>5000+ image dataset</strong> using DINOv2 and SAM for automated segmentation mask generation</li>
+                            <li>Achieved <strong>96% SOTA classification accuracy</strong> using ECA, SAM, hybrid CNN-Transformer architecture with frequency feature interaction</li>
+                            <li>Research paper <strong>published</strong> in Sustainable Cities and Society journal (Impact Factor: 10.5)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="exp-header">
+                            <h3>Machine Learning Intern</h3>
+                            <span class="company">Styldod Inc.</span>
+                            <span class="exp-period">Jun 2024 – Oct 2024</span>
+                            <span class="exp-location">Bangalore, India (Remote)</span>
+                        </div>
+                        <ul class="exp-achievements">
+                            <li>Optimized diffusion model inference using Onediffusion and Stablefast, achieving <strong>50% faster inference</strong> and <strong>30% GPU usage reduction</strong></li>
+                            <li>Developed scalable pipeline for image collection, quality control, and labeling; tested with <strong>300k+ images</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collaborations glass-card">
+                <h3><i class="fas fa-handshake"></i> Key Collaborations</h3>
+                <div class="collab-grid">
+                    <div class="collab-item">
+                        <h4>Virtual Try-On Optimization</h4>
+                        <span class="collab-company">Alle • Dec 2024</span>
+                        <p>Led team of 5 to optimize LoRA-based try-on system for FLUX, achieving <strong>2.5× faster boot-up</strong> and <strong>98.7 PSNR</strong> on A40/H100 GPUs</p>
+                    </div>
+                    <div class="collab-item">
+                        <h4>LLM-SQL Generation</h4>
+                        <span class="collab-company">Attentions.ai • Apr 2024</span>
+                        <p>Led team of 5–7 to fine-tune LLaMA, Gemma, Qwen & Phi models for complex SQL query tasks; achieved <strong>90% accuracy</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-rocket"></i> Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card glass-card featured">
+                    <div class="project-header">
+                        <h3>Sobra: Soybean Disease Classification & Explanation</h3>
+                        <span class="project-date">Apr 2025 • Latest</span>
+                    </div>
+                    <p class="project-description">
+                        Multimodal AI system for soybean disease classification using vision-language models and attention-based reasoning, achieving <strong>95% accuracy</strong> on real-world data. Integrated RAG pipeline for symptom-based remedy suggestions from damaged leaf images.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vision-Language Models</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Explainable AI</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <h3>Dynamic Agentic RAG System</h3>
+                        <span class="project-date">Inter IIT Tech Meet 13.0</span>
+                    </div>
+                    <p class="project-description">
+                        Pathway-integrated dynamic agentic RAG system with real-time data ingestion, tool calling, and modular tool integration. Outperformed closed and open-source LLMs in knowledge-intensive tasks.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">Knowledge Graphs</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <h3>Behavior Simulation Challenge</h3>
+                        <span class="project-date">Bronze Medal • Nov 2023</span>
+                    </div>
+                    <p class="project-description">
+                        Tweet prediction model with <strong>96% accuracy</strong> and fine-tuned LLaMA for engagement optimization tasks. Processed <strong>1M+ multimodal records</strong> (text, image, audio, video).
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">LLaMA</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Multimodal Processing</span>
+                        <span class="tech-tag">Deep Learning</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <h3>Dribbble Clone</h3>
+                        <span class="project-date">Sep 2024</span>
+                    </div>
+                    <p class="project-description">
+                        Complete full-stack Dribbble clone with project sharing functionality, portfolio profiles, and Google OAuth integration. Built with modern tech stack and cloud-based image handling.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">GraphQL</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Cloudinary</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <h3>Automatic TikTok Generator</h3>
+                        <span class="project-date">May 2024</span>
+                    </div>
+                    <p class="project-description">
+                        Automated video editing pipeline achieving <strong>50-60s processing</strong> for 5s UHD videos. Complete pipeline with AnimateDiff and ControlNet, evaluated using SOTA benchmarks.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">AnimateDiff</span>
+                        <span class="tech-tag">ControlNet</span>
+                        <span class="tech-tag">Video Processing</span>
+                        <span class="tech-tag">Computer Vision</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <h3>Hostel & Mess Management System</h3>
+                        <span class="project-date">IITI Academic Office</span>
+                    </div>
+                    <p class="project-description">
+                        Complete Django-based mess and hostel allocation system for IIT Indore. Engineered full-stack solution with comprehensive documentation and security measures.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Database Design</span>
+                        <span class="tech-tag">System Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-graduation-cap"></i> Publications</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="publication-card glass-card">
+                <div class="pub-header">
+                    <h3>An explainable deep neural network with frequency-aware channel and spatial refinement for flood prediction in sustainable cities</h3>
+                    <div class="pub-meta">
+                        <span class="journal">Sustainable Cities and Society, Vol. 130, 2025</span>
+                        <span class="impact-factor">Impact Factor: 10.5</span>
+                    </div>
+                </div>
+                <div class="pub-authors">
+                    <strong>Authors:</strong> B. Kaurav, S. S. Dar, A. Jain, C. S. Raghaw, M. Z. U. Rehman, N. Kumar
+                </div>
+                <p class="pub-abstract">
+                    Developed an explainable deep neural network architecture incorporating frequency-aware channel attention and spatial refinement mechanisms for accurate flood prediction in urban environments, contributing to sustainable city planning and disaster management.
+                </p>
+                <div class="pub-actions">
+                    <a href="https://doi.org/10.1016/j.scs.2025.106480" target="_blank" class="btn btn-primary glass-card">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Publication
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-code"></i> Technical Arsenal</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-brain"></i> AI/ML & Deep Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">PyTorch</span>
+                        <span class="skill-tag expert">Transformers</span>
+                        <span class="skill-tag expert">Diffusers</span>
+                        <span class="skill-tag advanced">TensorFlow</span>
+                        <span class="skill-tag expert">OpenCV</span>
+                        <span class="skill-tag advanced">PEFT & LoRA</span>
+                        <span class="skill-tag expert">ComfyUI</span>
+                        <span class="skill-tag advanced">Scikit-learn</span>
+                        <span class="skill-tag expert">Pandas & NumPy</span>
+                        <span class="skill-tag advanced">MLflow</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-eye"></i> Computer Vision & Generative AI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">FLUX LoRA</span>
+                        <span class="skill-tag expert">Stable Diffusion</span>
+                        <span class="skill-tag advanced">ControlNet</span>
+                        <span class="skill-tag expert">DINOv2</span>
+                        <span class="skill-tag expert">SAM</span>
+                        <span class="skill-tag advanced">YOLO</span>
+                        <span class="skill-tag expert">Face Recognition</span>
+                        <span class="skill-tag advanced">GANs</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-laptop-code"></i> Full Stack Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">Python</span>
+                        <span class="skill-tag expert">JavaScript/TypeScript</span>
+                        <span class="skill-tag expert">Next.js</span>
+                        <span class="skill-tag expert">React</span>
+                        <span class="skill-tag expert">Django</span>
+                        <span class="skill-tag advanced">FastAPI</span>
+                        <span class="skill-tag advanced">Flask</span>
+                        <span class="skill-tag expert">Supabase</span>
+                        <span class="skill-tag advanced">GraphQL</span>
+                        <span class="skill-tag expert">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-cloud"></i> DevOps & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">Docker</span>
+                        <span class="skill-tag expert">AWS</span>
+                        <span class="skill-tag advanced">GCP</span>
+                        <span class="skill-tag expert">GitHub CI/CD</span>
+                        <span class="skill-tag expert">Redis</span>
+                        <span class="skill-tag intermediate">Kubernetes</span>
+                        <span class="skill-tag advanced">Linux</span>
+                        <span class="skill-tag expert">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-university"></i> Education</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="education-card glass-card">
+                <div class="edu-header">
+                    <h3>B.Tech. in Computer Science & Engineering</h3>
+                    <div class="edu-meta">
+                        <span class="edu-institution">Indian Institute of Technology Indore</span>
+                        <span class="edu-period">2022 – 2026 (Expected)</span>
+                        <span class="edu-cgpa">CGPA: <strong>8.44</strong></span>
+                    </div>
+                </div>
+                <div class="edu-courses">
+                    <h4>Key Courses</h4>
+                    <div class="course-tags">
+                        <span class="course-tag">Data Structures & Algorithms</span>
+                        <span class="course-tag">Database Systems</span>
+                        <span class="course-tag">Software Engineering</span>
+                        <span class="course-tag">Computer Networks</span>
+                        <span class="course-tag">Operating Systems</span>
+                        <span class="course-tag">Linear Algebra</span>
+                        <span class="course-tag">Machine Learning</span>
+                        <span class="course-tag">Computer Vision</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievements glass-card">
+                <h3><i class="fas fa-trophy"></i> Achievements</h3>
+                <div class="achievement-grid">
+                    <div class="achievement-item">
+                        <i class="fas fa-medal"></i>
+                        <div>
+                            <h4>Bronze Medal</h4>
+                            <p>12th Inter IIT Tech Meet, Adobe's Behaviour Simulation Challenge (2023)</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-medal"></i>
+                        <div>
+                            <h4>Gold Medal</h4>
+                            <p>IITI Summer of Code, CyberSecurity (2023)</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>JEE Advanced</h4>
+                            <p>All India Rank 1083 (2022)</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>JEE Mains</h4>
+                            <p>All India Rank 5995 (2022)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Bharat Kaurav. Built with passion and precision.</p>
+            <div class="footer-social">
+                <a href="mailto:bharatkaurav2211@gmail.com" class="social-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/TheNetherWatcher" target="_blank" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bharat-kaurav2024" target="_blank" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/tnw_01" target="_blank" class="social-link" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

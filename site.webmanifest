@@ -1,0 +1,26 @@
+{
+    "name": "Bharat Kaurav - Portfolio",
+    "short_name": "BK Portfolio",
+    "description": "Software Engineer & AI Researcher Portfolio",
+    "icons": [
+        {
+            "src": "favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ff0a0a",
+    "background_color": "#0a0a0a",
+    "display": "standalone",
+    "start_url": "/"
+}
