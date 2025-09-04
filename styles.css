@@ -598,6 +598,21 @@ body {
     padding: 0 2rem;
 }
 
+/* Ultra-wide screens optimization */
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .section-header {
     text-align: center;
     margin-bottom: 4rem;
@@ -768,11 +783,26 @@ body {
     line-height: 1.6;
 }
 
-/* Projects Grid */
+/* Projects Grid - Fully Responsive */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
     gap: 2rem;
+}
+
+/* Responsive breakpoints for projects */
+@media (max-width: 1400px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1.8rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
 }
 
 .project-card {
@@ -892,16 +922,25 @@ body {
     gap: 1rem;
 }
 
-/* Skills Grid */
+/* Skills Grid - Fully Responsive */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
     gap: 1.5rem;
 }
 
-@media (max-width: 1024px) {
+/* Responsive breakpoints for skills */
+@media (max-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 1.4rem;
+    }
+}
+
+@media (max-width: 900px) {
     .skills-grid {
         grid-template-columns: 1fr;
+        gap: 1.2rem;
     }
 }
 
@@ -1180,6 +1219,7 @@ body {
 }
 
 /* Responsive Design */
+/* Large tablets and small desktops */
 @media (max-width: 1024px) {
     .hero-container {
         grid-template-columns: 1fr;
@@ -1202,6 +1242,10 @@ body {
     
     .hamburger {
         display: flex;
+    }
+    
+    .container {
+        padding: 0 1.5rem;
     }
 }
 
@@ -1231,7 +1275,7 @@ body {
     }
     
     .quick-stats {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
     
@@ -1280,6 +1324,28 @@ body {
     }
 }
 
+/* Small tablets and large phones */
+@media (max-width: 600px) {
+    .quick-stats {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .skill-category {
+        padding: 1.2rem;
+    }
+    
+    .project-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Small phones */
 @media (max-width: 480px) {
     .loading-logo .logo-text {
         font-size: 3rem;

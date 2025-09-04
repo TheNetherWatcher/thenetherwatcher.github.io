@@ -319,7 +319,7 @@ class ModernPortfolio {
     initSmoothScroll() {
         document.querySelectorAll('a[href^="#"]').forEach(link => {
             link.addEventListener('click', (e) => {
-                e.preventDefault();
+        e.preventDefault();
                 const targetId = link.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
                 
@@ -658,10 +658,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 3000);
             
             konamiCode = [];
-        }
+      }
     });
-});
-
+  });
+  
 // Add rainbow animation for easter egg
 const rainbowStyle = `
     @keyframes rainbow {
