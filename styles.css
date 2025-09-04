@@ -895,19 +895,45 @@ body {
 /* Skills Grid */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .skill-category {
-    padding: 2rem;
+    padding: 1.8rem;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.skill-category::-webkit-scrollbar {
+    width: 4px;
+}
+
+.skill-category::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+}
+
+.skill-category::-webkit-scrollbar-thumb {
+    background: var(--primary-red);
+    border-radius: 2px;
+}
+
+.skill-category::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-red);
 }
 
 .skill-category h3 {
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--pure-white);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     gap: 0.8rem;
@@ -917,16 +943,57 @@ body {
     color: var(--primary-red);
 }
 
+.skill-details {
+    margin-bottom: 1.2rem;
+}
+
+.category-description {
+    color: var(--gray-light);
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.skill-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-bullets li {
+    color: var(--gray-light);
+    margin-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+    font-size: 0.85rem;
+}
+
+.skill-bullets li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-red);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.skill-bullets strong {
+    color: var(--pure-white);
+    font-weight: 600;
+}
+
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.8rem;
+    gap: 0.6rem;
 }
 
 .skill-tag {
-    padding: 0.6rem 1rem;
-    border-radius: 25px;
-    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
     font-weight: 500;
     transition: var(--transition-smooth);
     cursor: pointer;
@@ -1191,6 +1258,12 @@ body {
     
     .skills-grid {
         grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    
+    .skill-category {
+        max-height: none;
+        padding: 1.5rem;
     }
     
     .collab-grid {
@@ -1239,13 +1312,22 @@ body {
         font-size: 1.8rem;
     }
     
-    .project-card,
-    .skill-category,
-    .education-card,
-    .achievements,
-    .collaborations {
-        padding: 1.5rem;
-    }
+      .project-card,
+  .skill-category,
+  .education-card,
+  .achievements,
+  .collaborations {
+    padding: 1.5rem;
+  }
+  
+  .skill-bullets li {
+    font-size: 0.85rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .category-description {
+    font-size: 0.9rem;
+  }
 }
 
 /* Animation Classes */
