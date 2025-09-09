@@ -376,8 +376,6 @@ body {
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.05);
     transition: var(--transition-smooth);
-    direction: ltr;        /* Force left-to-right */
-    unicode-bidi: plaintext; /* Prevent symbol reordering */
 }
 
 .stat-item:hover {
