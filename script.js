@@ -299,7 +299,11 @@ class ModernPortfolio {
         
         const finalNumber = numberElement.textContent;
         const numericValue = parseFloat(finalNumber.replace(/[^0-9.]/g, ''));
-        const suffix = finalNumber.replace(/[0-9.]/g, '');
+        
+        // Extract prefix (like $) and suffix (like K+) separately
+        const match = finalNumber.match(/^([^0-9.]*)([0-9.]+)(.*)$/);
+        const prefix = match ? match[1] : '';
+        const suffix = match ? match[3] : '';
         
         let currentNumber = 0;
         const increment = numericValue / 50;
@@ -311,7 +315,7 @@ class ModernPortfolio {
                 clearInterval(counter);
             }
             
-            numberElement.textContent = Math.floor(currentNumber) + suffix;
+            numberElement.textContent = prefix + Math.floor(currentNumber) + suffix;
         }, 30);
     }
 
