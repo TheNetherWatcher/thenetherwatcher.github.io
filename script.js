@@ -10,10 +10,10 @@ class ModernPortfolio {
         
         // Typing animation properties
         this.typingTexts = [
-            "Software Engineer @ Metzev",
-            "AI/ML Research Engineer",
-            "Full Stack Developer",
-            "Computer Vision Expert",
+            "Software & AI Engineer",
+            "AI Engineer @ Qure.ai",
+            "Full Stack @ Foundation (YC X25)",
+            "Gen AI & MLOps",
             "Published Researcher",
             "Problem Solver"
         ];
@@ -264,7 +264,9 @@ class ModernPortfolio {
                     entry.target.classList.add('slide-up');
                     
                     // Special animations for different elements
-                    if (entry.target.classList.contains('skill-tag')) {
+                    if (entry.target.classList.contains('skill-category')) {
+                        this.animateSkillTags(entry.target);
+                    } else if (entry.target.classList.contains('skill-tag')) {
                         this.animateSkillTags(entry.target.parentElement);
                     } else if (entry.target.classList.contains('stat-item')) {
                         this.animateCounters(entry.target);
